@@ -1,0 +1,6 @@
+ALTER TABLE evento
+ADD CONSTRAINT RESTRICCION_F_H
+CHECK (
+	fecha_hora > '2020/07/24 09:00:00'
+    AND fecha_hora < '2020/08/09 20:00:00'
+);

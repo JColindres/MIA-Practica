@@ -1,0 +1,2 @@
+ALTER TABLE miembro
+ALTER COLUMN telefono SET DEFAULT 0;

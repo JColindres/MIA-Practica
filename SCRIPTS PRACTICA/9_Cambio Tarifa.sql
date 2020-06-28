@@ -1,0 +1,3 @@
+ALTER TABLE costo_evento
+ALTER COLUMN tarifa TYPE DECIMAL(10,2) USING tarifa::DECIMAL;
+

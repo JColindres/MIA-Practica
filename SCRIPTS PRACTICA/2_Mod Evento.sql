@@ -1,0 +1,8 @@
+ALTER TABLE evento
+DROP COLUMN fecha;
+
+ALTER TABLE evento
+DROP COLUMN hora;
+
+ALTER TABLE evento
+ADD fecha_hora TIMESTAMP NOT NULL;

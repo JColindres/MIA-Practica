@@ -1,0 +1,10 @@
+CREATE TABLE sede (
+	cod_sede INTEGER NOT NULL PRIMARY KEY,
+	sede VARCHAR(50) NOT NULL
+);
+
+ALTER TABLE evento
+ALTER COLUMN ubicacion TYPE INTEGER USING ubicacion::INTEGER;
+
+ALTER TABLE evento
+ADD CONSTRAINT fk_ev4 FOREIGN KEY (ubicacion) REFERENCES sede(cod_sede);
